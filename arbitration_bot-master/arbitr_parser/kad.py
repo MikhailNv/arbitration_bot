@@ -114,7 +114,6 @@ class DriverScrapping:
 
         find_el = self.driver.find_elements(By.CLASS_NAME, 'l-col')
         if not self.checkexistsbypath('//*[@id="b-case-header"]/ul[2]/li[1]'):
-            # print('пиздец')
             return False
         if len(find_el) == 1:
             s = '//*[@id="chrono_list_content"]/div[1]/div/div[2]'
@@ -261,7 +260,3 @@ class DriverScrapping:
             return document_link
         except:
             return document_link
-
-
-# scrap = DriverScrapping()
-# print(scrap.all_types())
